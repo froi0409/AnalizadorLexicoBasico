@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:analizadorLexicoBasico"
         mc:Ignorable="d"
-        Title="MainWindow" Height="383.6" Width="553.023">
+        Title="Analizador Léxico" Height="383.6" Width="553.023" ShowInTaskbar="False" Icon="c8ebb9947fe4f57d2bf706184c620895-abrir-icono-de-libro-de-texto-by-vexels.png">
+    
     <Grid Margin="0,0,3.6,0" Background="#FFF4F4F4">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="39*"/>
@@ -25,8 +26,8 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Button x:Name="leerEntrada" Content="ANALIZAR" HorizontalAlignment="Left" Margin="37,140,0,0" VerticalAlignment="Top" Width="472" FontSize="15" Grid.ColumnSpan="2" Height="34" Click="Button_Click"/>
-        <Label Content="Usted ingresó:" HorizontalAlignment="Left" Margin="37,190,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="132" FontSize="15"/>
-        <Label x:Name="respuesta" Content="" HorizontalAlignment="Left" Margin="37,225,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="472" Height="46" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Tokens encontrados:" HorizontalAlignment="Left" Margin="37,190,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="152" FontSize="15"/>
+        <ListBox x:Name="listSalidas" HorizontalAlignment="Left" Height="104" Margin="37,225,0,0" VerticalAlignment="Top" Width="472" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
