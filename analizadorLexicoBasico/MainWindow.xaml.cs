@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Diagnostics;
 using System.Linq;
 using System.Reflection.Emit;
@@ -30,31 +31,61 @@ namespace analizadorLexicoBasico
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Lector l1 = new Lector(txtEntrada.Text);
-            respuesta.Content = l1.leer();
+            //Limpiamos el listBox y leemos la entrada del usuario
+            listSalidas.Items.Clear();
+            leer(txtEntrada.Text);
+        }
+
+        public void leer(String cad)
+        {
+            //Convertimos la entrada del usuario en un array tipo char
+            char[] cadena = cad.ToCharArray();
+
+            //Ciclo que nos sirve para analizar cada posición de la cadena
+            for (int i = 0; i < cad.Length; i++)
+            {
+                if ( esQ(cadena[i]) )
+                {
+                    listSalidas.Items.Add("SIUUUUU");
+                }
+            }
+        }
+
+        private bool esNumero(char num)
+        {
+            if(num >= 48 && num <= 57)
+            {
+                return true;
+            }
+            else
+                return false;
+        }
+
+        private bool esLetra(char num)
+        {
+            if (num >= 65 && num <= 90)
+                return true;
+            else if (num >= 97 && num <= 122)
+                return true;
+            else if (num == 164 || num == 165)
+                return true;
+            else return false;
+        }
+
+        private bool esPunto(char num)
+        {
+            if (num == 46)
+                return true;
+            else
+                return false;
+        }
+
+        private bool esQ(char num)
+        {
+            if (num == 81)
+                return true;
+            else
+                return false;
         }
     }
-}
-
-class Lector
-{
-
-    private String cadena;
-
-    public Lector(String cadena)
-    {
-        this.cadena = cadena;
-    }
-
-    public String leer()
-    {
-
-        String resultadoF = cadena;
-
-
-
-        return resultadoF;
-
-    }
-
 }

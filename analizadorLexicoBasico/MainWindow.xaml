@@ -25,8 +25,8 @@
             </TextBox.RenderTransform>
         </TextBox>
         <Button x:Name="leerEntrada" Content="ANALIZAR" HorizontalAlignment="Left" Margin="37,140,0,0" VerticalAlignment="Top" Width="472" FontSize="15" Grid.ColumnSpan="2" Height="34" Click="Button_Click"/>
-        <Label Content="Usted ingresó:" HorizontalAlignment="Left" Margin="37,190,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="132" FontSize="15"/>
-        <Label x:Name="respuesta" Content="" HorizontalAlignment="Left" Margin="37,225,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="472" Height="46" FontSize="20" FontWeight="Bold" VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
+        <Label Content="Tokens encontrados:" HorizontalAlignment="Left" Margin="37,190,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Width="152" FontSize="15"/>
+        <ListBox x:Name="listSalidas" HorizontalAlignment="Left" Height="104" Margin="37,225,0,0" VerticalAlignment="Top" Width="472" Grid.ColumnSpan="2"/>
 
     </Grid>
 </Window>
