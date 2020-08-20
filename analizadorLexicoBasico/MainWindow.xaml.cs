@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -23,6 +25,36 @@ namespace analizadorLexicoBasico
         public MainWindow()
         {
             InitializeComponent();
+            
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Lector l1 = new Lector(txtEntrada.Text);
+            respuesta.Content = l1.leer();
         }
     }
+}
+
+class Lector
+{
+
+    private String cadena;
+
+    public Lector(String cadena)
+    {
+        this.cadena = cadena;
+    }
+
+    public String leer()
+    {
+
+        String resultadoF = cadena;
+
+
+
+        return resultadoF;
+
+    }
+
 }

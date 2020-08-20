@@ -1,0 +1,15 @@
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\bin\Debug\analizadorLexicoBasico.exe.config
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\bin\Debug\analizadorLexicoBasico.exe
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\bin\Debug\analizadorLexicoBasico.pdb
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico.csprojAssemblyReference.cache
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\MainWindow.g.cs
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\App.g.cs
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico_MarkupCompile.cache
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico_MarkupCompile.lref
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\MainWindow.baml
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico.g.resources
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico.Properties.Resources.resources
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico.csproj.GenerateResource.cache
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico.exe
+C:\Users\Usuario\Documents\CUNOC\Segundo Semestre 2020\Lenguajes Formales y de Programación\Proyectos\AnalizadorLexicoBasico\analizadorLexicoBasico\obj\Debug\analizadorLexicoBasico.pdb
