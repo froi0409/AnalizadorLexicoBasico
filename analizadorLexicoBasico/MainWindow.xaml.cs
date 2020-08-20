@@ -26,7 +26,6 @@ namespace analizadorLexicoBasico
         public MainWindow()
         {
             InitializeComponent();
-
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
@@ -85,20 +84,23 @@ namespace analizadorLexicoBasico
         {
             bool condicion = true;
             //Cuenta los puntos que existen en la cadena
-            int cont = 1;
+            int cont = 0;
 
             //Verifica que la cadena inicie con una Q
             if (array.Length > 1 && esQ(array[0]))
             {
                 for (int i = 1; i < array.Length; i++)
                 {
-                    if (cont == 2)
-                        condicion = false;
                     if (esPunto(array[i]))
                         cont++;
-                    else if (esNumero(array[i])) { }
-                    else
+                    else if (!esNumero(array[i]))
+                    {
                         condicion = false;
+                    }
+                    if (cont == 2)
+                    {
+                        condicion = false;
+                    }
                 }
             }
             else
@@ -115,12 +117,12 @@ namespace analizadorLexicoBasico
             //una expresión escrita de la forma n. se tomara como n.00 (ejemplo: 13. = 13.00)
             for(int i = 0; i < array.Length; i++)
             {
-                if (i == array.Length -1 && esPunto(array[i])) { }
+                if (i == (array.Length - 1) && esPunto(array[i])) { }
                 else if (esPunto(array[i]))
                 {
-                    for(int j = i+1; i < array.Length; j++)
+                    for(int j = i+1; j < array.Length; j++)
                     {
-                        if (array[i] != '0')
+                        if (array[j] != '0')
                             condicion = false;
                     }
                 }
@@ -134,14 +136,14 @@ namespace analizadorLexicoBasico
         {
             bool condicion = true;
             //Cuenta la cantidad de puntos existentes en la cadena
-            int cont = 1;
+            int cont = 0;
             for(int i = 0; i < array.Length; i++)
             {
-                if (cont == 2)
-                    condicion = false;
                 if (esPunto(array[i]))
                     cont++;
                 else if (!esNumero(array[i]))
+                    condicion = false;
+                if (cont == 2)
                     condicion = false;
             }
             return condicion;
@@ -150,10 +152,8 @@ namespace analizadorLexicoBasico
         private bool esPalabra(char[] array)
         {
             bool condicion = true;
-            listSalidas.Items.Add(array.Length);
             for(int i = 0; i < array.Length; i++)
             {
-                Console.WriteLine(i);
                 if (!esLetra(array[i]))
                     condicion = false;
             }
@@ -177,9 +177,10 @@ namespace analizadorLexicoBasico
                 return true;
             else if (num >= 97 && num <= 122)
                 return true;
-            else if (num == 164 || num == 165)
+            else if (num == 'ñ' || num == 'Ñ' || num == 'á' || num == 'é' || num == 'í' || num == 'ó' || num == 'ú' || num == 'Á' || num == 'É' || num == 'Í' || num == 'Ó' || num == 'U')
                 return true;
-            else return false;
+            else 
+                return false;
         }
 
         private bool esPunto(char num)
